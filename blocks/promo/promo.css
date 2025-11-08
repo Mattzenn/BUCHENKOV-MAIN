@@ -1,0 +1,143 @@
+.promo {
+  margin: 0 auto;
+  padding: 25px;
+  background: #fff;
+  background-size: 100%;
+  color: #111;
+  width: 100vw;
+  padding: 25px 0 200px 0;
+  background-image: url(/images/Фон\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo__logo_mobile {
+  display: none;
+}
+
+.promo__title {
+  max-width: 650px;
+  text-align: left;
+  padding-top: 70px;
+  color: #9b5d92;
+  font-size: 100;
+  font-weight: bold;
+}
+
+.promo__logo {
+  max-width: 25vw;
+  min-width: 25vw;
+  height: auto;
+  z-index: 1;
+
+  position: absolute;
+  top: 220px;
+  right: 23%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.promo .aboutme__container_main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@media screen and (max-width: 2400px) {
+  .promo__logo {
+    right: 20%;
+    top: 200px;
+    max-width: 30vw;
+    min-width: 30vw;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .promo__logo {
+    right: 10%;
+    top: 200px;
+    max-width: 40vw;
+    min-width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .promo__logo {
+    max-width: 50vw;
+    min-width: 50vw;
+    height: auto;
+    right: 0%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .promo__logo {
+    max-width: 50vw;
+    min-width: 50vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .promo {
+    padding-bottom: 25px;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .promo__logo {
+    max-width: 35vw;
+    min-width: 35vw;
+    top: 500px;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .promo__logo {
+    max-width: 35vw;
+    min-width: 35vw;
+    top: 400px;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .promo__title {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .promo__logo_mobile {
+    display: block;
+    max-width: 50vw;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .promo__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .promo__title {
+    padding: 60px 10px 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .promo__title {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

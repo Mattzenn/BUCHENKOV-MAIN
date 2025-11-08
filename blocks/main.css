@@ -1,0 +1,327 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.content {
+  width: 100vw;
+  background-image: url(/images/Фон.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-inline-size: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.page {
+  font-family: "Gilroy", "Inter", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.h1 {
+  font-weight: bold;
+  /* line-height: 1.5; */
+  padding: 70px 70px;
+  margin: 0;
+}
+
+.large-h1-text {
+  font-size: 100px;
+  line-height: 100px;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  .large-h1-text {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .large-h1-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .large-h1-text {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+.small-h1-text {
+  font-size: 50px;
+  font-weight: 500;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  .small-h1-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .small-h1-text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.p_aboutme {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .p_aboutme {
+    width: 400px;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  max-width: calc(100vw - 3em);
+  color: #6a655f;
+  padding: 64px, 0;
+}
+
+.button {
+  color: #242424;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  letter-spacing: -0.01em;
+  background-color: #fff;
+  display: block;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #e78ba3;
+}
+
+.button_type_pink {
+  color: #fff;
+  background-color: #f29cb3;
+}
+
+.button_type_big {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  width: 300px;
+  height: 50px;
+  border-radius: 18.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  max-width: 1280px;
+  display: flex;
+}
+
+.aboutme {
+  max-width: 1280px;
+  min-height: 388px;
+  margin: 0 auto;
+  padding: 70px 70px 70px 70px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+}
+
+.info_icon_1 {
+  background-image: url(../../images/миссия.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important ;
+}
+
+.info_icon_2 {
+  background-image: url(../../images/образование.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: #58cad4;
+}
+
+.info_icon_3 {
+  background-image: url(../../images/микроскоп.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.info_icon_4 {
+  background-image: url(../../images/квалификация.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: #58cad4;
+}
+
+.info_icon_5 {
+  background-image: url(../../images/опыт.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.info_icon_6 {
+  background-image: url(../../images/подход.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: #58cad4;
+}
+
+.info_icon_1_number {
+  background-image: url(../../images/Heading1.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.info_icon_2_number {
+  background-image: url(../../images/Heading2.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: #58cad4;
+}
+
+.info_icon_3_number {
+  background-image: url(../../images/Heading3.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.info_icon_4_number {
+  background-image: url(../../images/Heading4.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: #58cad4;
+}
+
+.info_icon_5_number {
+  background-image: url(../../images/Heading5.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.info_icon_green {
+  background-color: #58cad4 !important;
+}
+
+.text_pink {
+  color: #9b5d92 !important;
+}
+
+.text_green {
+  color: #4c9ea5 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme {
+    max-width: 1280px;
+    min-height: 388px;
+    margin: 0 auto;
+    padding: 90px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .aboutme {
+    max-width: 1280px;
+    min-height: 388px;
+    margin: 0 auto;
+    padding: 200px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .button_type_big {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .aboutme {
+    max-width: 1280px;
+    min-height: 388px;
+    margin: 0 auto;
+    padding: 70px 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+.text_opacity {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.text_opacity:hover {
+  opacity: 0.7;
+}
+
+textarea {
+  resize: none;
+}

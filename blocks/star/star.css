@@ -1,0 +1,12 @@
+.star {
+  position: absolute;
+  width: 60px;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+@media (max-width: 426px) {
+  .star {
+    display: none;
+  }
+}
