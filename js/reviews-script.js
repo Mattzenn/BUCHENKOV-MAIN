@@ -24,10 +24,10 @@ function prevSlide() {
 }
 
 // Автопрокрутка
-function startAutoSlide() {
-  stopAutoSlide();
-  autoSlideInterval = setInterval(nextSlide, 5000);
-}
+// function startAutoSlide() {
+//   stopAutoSlide();
+//   autoSlideInterval = setInterval(nextSlide, 5000);
+// }
 
 function stopAutoSlide() {
   clearInterval(autoSlideInterval);
@@ -36,12 +36,12 @@ function stopAutoSlide() {
 // Обработчики кнопок
 nextButton.addEventListener('click', () => {
   nextSlide();
-  startAutoSlide();
+  // startAutoSlide();
 });
 
 prevButton.addEventListener('click', () => {
   prevSlide();
-  startAutoSlide();
+  // startAutoSlide();
 });
 
 // Пересчёт при ресайзе
@@ -74,8 +74,8 @@ track.addEventListener('touchend', () => {
     nextSlide(); // свайп влево
   }
 
-  startAutoSlide(); // перезапускаем автопрокрутку
+  // startAutoSlide(); // перезапускаем автопрокрутку
 });
 
 // Запуск при загрузке
-startAutoSlide();
+// startAutoSlide();

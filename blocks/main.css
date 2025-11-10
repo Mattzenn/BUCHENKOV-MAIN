@@ -4,7 +4,7 @@ body {
 
 .content {
   width: 100vw;
-  background-image: url(/images/Фон.png);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -180,72 +180,72 @@ p {
 }
 
 .info_icon_1 {
-  background-image: url(../../images/миссия.png) !important;
+  background-image: url(../images/mission.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important ;
 }
 
 .info_icon_2 {
-  background-image: url(../../images/образование.png) !important;
+  background-image: url(../images/education.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background: #58cad4;
 }
 
 .info_icon_3 {
-  background-image: url(../../images/микроскоп.png) !important;
+  background-image: url(../images/microscope.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
 
 .info_icon_4 {
-  background-image: url(../../images/квалификация.png) !important;
+  background-image: url(../images/qualification.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background: #58cad4;
 }
 
 .info_icon_5 {
-  background-image: url(../../images/опыт.png) !important;
+  background-image: url(../images/experience.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
 
 .info_icon_6 {
-  background-image: url(../../images/подход.png) !important;
+  background-image: url(../images/approach.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background: #58cad4;
 }
 
 .info_icon_1_number {
-  background-image: url(../../images/Heading1.png) !important;
+  background-image: url(../images/Heading1.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
 
 .info_icon_2_number {
-  background-image: url(../../images/Heading2.png) !important;
+  background-image: url(../images/Heading2.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background: #58cad4;
 }
 
 .info_icon_3_number {
-  background-image: url(../../images/Heading3.png) !important;
+  background-image: url(../images/Heading3.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
 
 .info_icon_4_number {
-  background-image: url(../../images/Heading4.png) !important;
+  background-image: url(../images/Heading4.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background: #58cad4;
 }
 
 .info_icon_5_number {
-  background-image: url(../../images/Heading5.png) !important;
+  background-image: url(../images/Heading5.png) !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
