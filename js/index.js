@@ -100,20 +100,20 @@ document.querySelectorAll('.faq__item').forEach(item => {
 });
 
 //звезды
-
 document.addEventListener("DOMContentLoaded", () => {
   const stars = document.querySelectorAll(".star");
   const windowHeight = window.innerHeight;
+  let ticking = false; // защита от перегрузки
 
-  // Устанавливаем стартовые позиции из атрибутов
+  // ставим стартовые позиции
   stars.forEach(star => {
-    const startX = star.dataset.startX || "50%";
-    const startY = star.dataset.startY || "0px";
-    star.style.left = startX;
-    star.style.top = startY;
+    star.style.left = star.dataset.startX;
+    star.style.top = star.dataset.startY;
   });
 
-  window.addEventListener("scroll", () => {
+  function updateStars() {
+    const windowHeight = window.innerHeight;
+
     stars.forEach(star => {
       const parent = star.closest("section");
       if (!parent) return;
@@ -124,12 +124,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const speedY = parseFloat(star.dataset.speedY) || 0.5;
       const speedX = parseFloat(star.dataset.speedX) || 0;
-      const scrollProgress = (windowHeight - rect.top);
+      const progress = windowHeight - rect.top;
 
-      const moveY = scrollProgress * speedY;
-      const moveX = scrollProgress * speedX;
+      const moveY = progress * speedY;
+      const moveX = progress * speedX;
 
       star.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
+
+    ticking = false;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      requestAnimationFrame(updateStars); // плавная отрисовка
+      ticking = true;
+    }
   });
 });

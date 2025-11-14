@@ -3,10 +3,12 @@
   width: 60px;
   pointer-events: none;
   transition: transform 0.1s linear;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 @media (max-width: 426px) {
   .star {
-    display: none;
+    /* display: none; */
   }
 }
