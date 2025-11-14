@@ -88,6 +88,10 @@
     font-size: 2rem;
     margin-bottom: 0;
   }
+
+  .methods__image {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {

@@ -5,7 +5,7 @@
   background-size: 100%;
   color: #111;
   width: 100vw;
-  padding: 25px 0 200px 0;
+  padding: 25px 0 220px 0;
   background-image: url(../../images/background_1.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -28,8 +28,8 @@
 }
 
 .promo__logo {
-  max-width: 25vw;
-  min-width: 25vw;
+  max-width: 20vw;
+  min-width: 20vw;
   height: auto;
   z-index: 1;
 
@@ -108,22 +108,26 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .promo__title {
-    padding: 0;
-  }
-}
-
 @media screen and (max-width: 769px) {
   .promo__logo_mobile {
     display: block;
-    max-width: 50vw;
+    max-width: 90vw;
     margin: 0 auto;
     padding-bottom: 40px;
   }
 
   .promo__logo {
     display: none;
+  }
+
+  .promo {
+      background-size: contain;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .promo__title {
+    padding: 0;
   }
 }
 
