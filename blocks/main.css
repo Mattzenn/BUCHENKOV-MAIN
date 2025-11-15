@@ -50,8 +50,8 @@ img {
 }
 
 .large-h1-text {
-  font-size: 75px;
-  line-height: 75px;
+  font-size: 60px;
+  line-height: 60px;
   z-index: 1;
   position: relative;
 }
@@ -78,7 +78,7 @@ img {
 }
 
 .small-h1-text {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   z-index: 1;
   position: relative;
@@ -86,8 +86,8 @@ img {
 
 @media screen and (max-width: 1440px) {
   .small-h1-text {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 
