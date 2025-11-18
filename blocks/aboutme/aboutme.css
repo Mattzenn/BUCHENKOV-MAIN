@@ -13,11 +13,12 @@
 
 .aboutme__info {
   z-index: 1;
+  padding: 0 0 87px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .aboutme__info {
-    padding: 0 0 87px;
+    padding: 0;
   }
 
   .aboutme__container {
@@ -29,12 +30,6 @@
   .aboutme__container {
     max-width: 600px;
     margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .aboutme__info {
-    padding: 50px 0 50px;
   }
 }
 

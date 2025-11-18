@@ -72,8 +72,8 @@ img {
 
 @media screen and (max-width: 500px) {
   .large-h1-text {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 }
 

@@ -94,16 +94,7 @@
   .promo__logo {
     max-width: 35vw;
     min-width: 35vw;
-    top: 500px;
-    right: 50px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .promo__logo {
-    max-width: 35vw;
-    min-width: 35vw;
-    top: 400px;
+    top: 250px;
     right: 50px;
   }
 }
@@ -111,7 +102,7 @@
 @media screen and (max-width: 769px) {
   .promo__logo_mobile {
     display: block;
-    max-width: 90vw;
+    max-width: 60vw;
     margin: 0 auto;
     padding-bottom: 40px;
   }
@@ -131,17 +122,15 @@
   }
 }
 
+@media screen and (max-width: 585px) {
+  .promo__logo_mobile {
+    max-width: 90vw;
+  }
+}
+
+
 @media screen and (max-width: 320px) {
   .promo__title {
     padding: 60px 10px 60px;
   }
-}
-
-@media screen and (max-width: 375px) {
-  .promo__title {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
 }
