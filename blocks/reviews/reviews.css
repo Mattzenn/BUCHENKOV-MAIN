@@ -150,7 +150,7 @@
   }
 
   .review__text {
-  justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .review__image-block {
@@ -167,15 +167,19 @@
   }
 
   .review {
-    height: 1300px;
+    height: 900px;
+  }
+}
+
+@media (max-width: 650px) {
+  .review {
+    padding: 20px;
+    height: auto;
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
-  .review {
-    padding: 20px;
-  }
-
   .reviews__title {
     font-size: 24px;
   }

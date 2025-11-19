@@ -31,10 +31,10 @@ function initCarousel({
   }
 
   // --- Автопрокрутка ---
-  function startAutoSlide() {
-    stopAutoSlide();
-    autoSlideInterval = setInterval(nextSlide, interval);
-  }
+  // function startAutoSlide() {
+  //   stopAutoSlide();
+  //   autoSlideInterval = setInterval(nextSlide, interval);
+  // }
 
   function stopAutoSlide() {
     clearInterval(autoSlideInterval);
@@ -44,14 +44,14 @@ function initCarousel({
   if (nextButton) {
     nextButton.addEventListener('click', () => {
       nextSlide();
-      startAutoSlide();
+      // startAutoSlide();
     });
   }
 
   if (prevButton) {
     prevButton.addEventListener('click', () => {
       prevSlide();
-      startAutoSlide();
+      // startAutoSlide();
     });
   }
 
@@ -63,7 +63,7 @@ function initCarousel({
   track.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     isSwiping = true;
-    stopAutoSlide();
+    // stopAutoSlide();
   });
 
   track.addEventListener('touchmove', (e) => {
@@ -81,14 +81,14 @@ function initCarousel({
     } else if (moveX < -threshold) {
       nextSlide();
     }
-    startAutoSlide();
+    // startAutoSlide();
   });
 
   // --- При ресайзе пересчитать позицию ---
   window.addEventListener('resize', () => moveToSlide(currentIndex));
 
   // --- Старт ---
-  startAutoSlide();
+  // startAutoSlide();
 }
 
 // Инициализация двух независимых слайдеров:

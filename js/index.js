@@ -55,50 +55,6 @@ document.querySelectorAll('.faq__item').forEach(item => {
 });
 
 
-// блок faq, плавное открытие окно
-document.querySelectorAll('.faq__item').forEach(item => {
-  const question = item.querySelector('.faq__question');
-  const answer = item.querySelector('.faq__answer');
-
-  question.addEventListener('click', () => {
-    const isActive = item.classList.contains('active');
-
-    if (isActive) {
-      // === Плавное закрытие ===
-      const startHeight = answer.scrollHeight;
-      answer.style.maxHeight = startHeight + 'px'; // фиксируем текущую высоту
-      answer.offsetHeight; // форсируем reflow
-      answer.style.maxHeight = '0';
-      answer.style.opacity = '0';
-
-      item.classList.remove('active');
-
-      answer.addEventListener(
-        'transitionend',
-        () => {
-          answer.style.maxHeight = '';
-        },
-        { once: true }
-      );
-    } else {
-      // === Плавное открытие ===
-      item.classList.add('active');
-      const endHeight = answer.scrollHeight;
-      answer.style.maxHeight = endHeight + 'px';
-      answer.style.opacity = '1';
-
-      // после анимации убираем ограничение, чтобы текст не обрезался при ресайзе
-      answer.addEventListener(
-        'transitionend',
-        () => {
-          answer.style.maxHeight = 'none';
-        },
-        { once: true }
-      );
-    }
-  });
-});
-
 //звезды
 document.addEventListener("DOMContentLoaded", () => {
   const stars = document.querySelectorAll(".star");
