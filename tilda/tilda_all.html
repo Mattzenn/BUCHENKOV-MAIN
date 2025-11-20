@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Детский мануальный терапевт Андрей Бученков — диагностика, Войта-терапия, ПНФ, мануальные методики, реабилитация детей с ДЦП, ЗПР, неврологическими и ортопедическими нарушениями. Москва, Лефортово. Запись на консультацию.">
     <link rel="icon" href="https://static.tildacdn.com/tild3938-3765-4663-a134-623537316437/logo_1.png" type="image/png" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>Бученков Андрей Евгеньевич — детский мануальный терапевт</title>
   </head>
 
@@ -1547,10 +1546,55 @@
                     class="form__textarea"
                     rows="4"
                   ></textarea>
+                  <span class="form__error"></span>
                 </div>
 
                 <button type="submit" class="form__button">Отправить</button>
+                
+                <p
+                  class="form__success-message"
+                  id="formSuccessMessage"
+                  aria-live="polite"
+                ></p>
               </form>
+              <!-- START TILDA FORM -->
+<div id="rec1584515091" class="r t-rec t-rec_pt_105 t-rec_pb_105" style="display:none;padding-top:105px;padding-bottom:105px;" data-animationappear="off" data-record-type="678">
+<div class="t678">
+<div class="t-container">
+<div class="t-col t-col_8 t-prefix_2">
+<div>
+<form id="form1584515091" name="form1584515091" role="form" action="#" method="POST" data-formactiontype="2" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_4" data-success-callback="t678_onSuccess" data-success-popup="y">
+<input type="hidden" name="formservices[]" value="5dad04610c2eb030149f405477b740ac" class="js-formaction-services">
+<input type="hidden" name="tildaspec-formname" tabindex="-1" value="Форма запроса с сайта">
+<div class="js-successbox t-form__successbox t-text t-text_md t-form-success-popup" aria-live="polite" style="display:none;"></div>
+<div class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
+<div class="t-input-group t-input-group_em" data-input-lid="8137513689600" data-field-type="em" data-field-name="email">
+<label for="input_8137513689600" class="t-input-title t-descr t-descr_md">Email</label>
+<div class="t-input-block">
+<input type="email" autocomplete="email" name="email" id="input_8137513689600" class="t-input js-tilda-rule" placeholder="Your Email" data-tilda-req="1" data-tilda-rule="email">
+</div></div>
+<div class="t-input-group t-input-group_nm" data-input-lid="8137513689601" data-field-type="nm" data-field-name="name">
+<label class="t-input-title t-descr t-descr_md">Name</label>
+<div class="t-input-block">
+<input type="text" autocomplete="name" name="name" id="input_8137513689601" class="t-input js-tilda-rule" placeholder="Your Full Name" data-tilda-rule="name">
+</div></div>
+<div class="t-input-group t-input-group_ph" data-input-lid="8137513689602" data-field-type="ph" data-field-name="phone">
+<label class="t-input-title t-descr t-descr_md">Phone</label>
+<div class="t-input-block">
+<input type="tel" name="phone" class="t-input" placeholder="+7 (000) 000-0000">
+</div></div>
+<div class="t-input-group t-input-group_ta" data-input-lid="8137513689603" data-field-type="ta" data-field-name="comment">
+<label class="t-input-title t-descr t-descr_md">Comments</label>
+<div class="t-input-block">
+<textarea name="comment" class="t-input"></textarea>
+</div></div>
+<div class="t-form__submit">
+<button class="t-submit" type="submit">Send</button>
+</div>
+</div>
+</form>
+</div></div></div></div></div>
+<!-- END TILDA FORM -->
             </div>
           </div>
         </section>
@@ -1638,5 +1682,61 @@
         </footer>
       </main>
     </div>
-  </body>
+  
+<script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js"></script>
+<script src="https://static.tildacdn.com/js/tilda-forms-1.0.min.js"></script>
+<script src="https://static.tildacdn.com/js/tilda-phone-mask-1.1.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  console.log('DOM ready');
+
+  var myForm = document.getElementById('contactForm');
+  if (!myForm) {
+    console.error('contactForm not found');
+    return;
+  }
+
+  var tildaFormWrapper = document.getElementById('rec1584515091');
+  if (!tildaFormWrapper) {
+    console.error('Tilda rec block not found');
+    return;
+  }
+
+  var tildaForm = tildaFormWrapper.querySelector('form');
+  if (!tildaForm) {
+    console.error('Tilda form inside rec not found');
+    return;
+  }
+
+  myForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    console.log('Submit external form');
+
+    var name    = document.getElementById('name')?.value || '';
+    var email   = document.getElementById('email')?.value || '';
+    var phone   = document.getElementById('phone')?.value || '';
+    var comment = document.getElementById('comment')?.value || '';
+
+    console.log('Values:', { name, email, phone, comment });
+
+    var tfName    = tildaForm.querySelector('input[name="name"]');
+    var tfEmail   = tildaForm.querySelector('input[name="email"]');
+    var tfPhone   = tildaForm.querySelector('input[name="phone"]'); // hidden в оригинальном блоке
+    var tfComment = tildaForm.querySelector('textarea[name="comment"]');
+
+    console.log('Tilda inputs:', { tfName, tfEmail, tfPhone, tfComment });
+
+    if (tfName)    tfName.value    = name;
+    if (tfEmail)   tfEmail.value   = email;
+    if (tfPhone)   tfPhone.value   = phone;
+    if (tfComment) tfComment.value = comment;
+
+    console.log('Dispatch submit on tildaForm');
+    tildaForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+  });
+});
+</script>
+
+</body>
 </html>
