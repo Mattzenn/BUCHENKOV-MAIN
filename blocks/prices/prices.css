@@ -151,6 +151,11 @@
   background-color: rgba(242, 156, 179, 0.15);
 }
 
+.boy_images {
+  margin: 0 auto;
+  display: block;
+}
+
 .prices__combo-title {
   font-size: 40px;
   color: #9b5d92;

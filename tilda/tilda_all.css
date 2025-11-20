@@ -1447,6 +1447,11 @@ textarea {
   border-radius: 50%;
 }
 
+.boy_images {
+  margin: 0 auto;
+  display: block;
+}
+
 @media (max-width: 600px) {
   .prices__card-text {
     font-size: 14px;
